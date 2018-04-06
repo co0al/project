@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TMS-사원관리시스템</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/tms.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  </head>
+<body>
+  <header>
+    <!--네비게이션  -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="../images/logo.PNG" alt="logo"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="list.html">사원목록 <span class="sr-only">(current)</span></a></li>
+            <li><a href="insert.html">사원등록</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">박보검님 로그인</a></li>
+            <li><a href="index.html">로그아웃</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <!-- 사원 상세 -->
+    <div class="table container">
+      <h3>사원 상세 정보</h3>
+      <table class="table table-bordered table-responsive">
+        <tr>
+         <th>사원번호</th>
+          <td>1004</td>
+        </tr>
+        <tr>
+         <th>이름</th>
+          <td>박보검</td>
+        </tr>
+        <tr>
+         <th>직급</th>
+          <td>사원</td>
+        </tr>
+        <tr>
+         <th>부서</th>
+          <td>영업부</td>
+        </tr>
+        <tr>
+         <th>소속팀</th>
+          <td>영업1팀</td>
+        </tr>
+        <tr>
+         <th>생년월일</th>
+          <td>93.04.05</td>
+        </tr>
+        <tr>
+         <th>전화번호</th>
+          <td>010-1234-1234</td>
+        </tr>
+        <tr>
+         <th>내선번호</th>
+          <td>02-820-2222</td>
+        </tr>
+        <tr>
+         <th>주소</th>
+          <td>서울특별시 서대문구</td>
+        </tr>
+        <tr>
+         <th>연봉</th>
+          <td>33,000,000</td>
+        </tr>
+        <tr>
+         <th>입사날짜</th>
+          <td>2018-04-05</td>
+        </tr>
+        <tr>
+         <th>희망부서/팀</th>
+          <td>중국영업팀</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="btn-area">
+      <button type="button" name="update"><a href="update.html">수정하기</a></button>
+      <button type="button" name="delete" data-toggle="modal" data-target="#deletemodal"><a href="#">삭제하기</a></button>
+      <button type="button" name="backList"><a href="list.html">목록으로</a></button>
+    </div>
+    <!-- confirm 창 -->
+    <div class="modal fade" id="deletemodal" tabindex="-1" role="dialog" aria-labelledby="deletemodalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="deletemodalLabel">사원정보삭제</h4>
+          </div>
+          <div class="modal-body">
+            사원의 정보를 삭제하시겠습니까?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">취소</button>
+            <button type="button" class="btn btn-primary">삭제</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <small>copyright&copy;tjoeun. All rights reserved.</small>
+  </footer>
+</body>
+</html>

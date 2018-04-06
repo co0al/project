@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/* nav */
+.navbar-brand img{height: 45px; padding-bottom: 10px;}
+
+/* footer */
+footer{
+   width: 100%;
+   bottom: 0;
+   background: #fff;
+   text-align: center;
+   border-top: 1px solid #e0e0e0;
+   padding-top: 10px;
+   margin-top: 20px;
+}
+
+/* 버튼통일 */
+.container button{background: #fff; border-radius: 5px; border: 1px solid #d2cdcc;}
+.btn-area input{background: #fff; border-radius: 5px; border: 1px solid #d2cdcc; height: 30px;}
+
+/* 사원상세 */
+.btn-area{margin-left: 20px;}
+.table tr th, .table-bordered tr th, .table-responsive tr th{background: #a4c5ec; color: #000;}
+
+/* 인덱스 스타일 */
+.container h2{text-align: center;}
+.container button.btn-default{float: right;}
+.container button.btn-login{padding: 25px;}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TMS-사원관리시스템</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/tms.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  </head>
+<body>
+  <header>
+    <!--네비게이션  -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="../images/logo.PNG" alt="logo"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="list.html">사원목록 <span class="sr-only">(current)</span></a></li>
+            <li  class="active"><a href="insert.html">사원등록</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">박보검님 로그인</a></li>
+            <li><a href="index.html">로그아웃</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- 사원 등록 -->
+  <section>
+    <h2>사원 등록 내용</h2>
+    <form action="13list.html" method="post">
+      <form class="container">
+        <div class="form-group">
+          <label for="Inputnewid">사원번호</label>
+          <input type="id" class="form-control" id="newid" placeholder="사원번호">
+        </div>
+        <div class="form-group">
+          <label for="Inputnewname">이름</label>
+          <input type="text" class="form-control" id="newname" placeholder="이름">
+        </div>
+        <div class="form-group">
+          <label for="Inputnewlevel">직급</label>
+          <input type="text" class="form-control" id="newlevel" placeholder="직급">
+        </div>
+        <div class="form-group">
+          <label for="Inputnewdepname">부서</label>
+          <input type="text" class="form-control" id="newdepname" placeholder="부서">
+        </div>
+        <div class="form-group">
+          <label for="Inputnewteam">소속팀</label>
+          <input type="text" class="form-control" id="newteam" placeholder="소속팀">
+        </div>
+        <div class="form-group">
+          <label for="Inputnewbirth">생년월일</label>
+          <input type="date" class="form-control" id="newbirth" placeholder="생년월일">
+        </div>
+        <div class="form-group">
+          <label for="Inputnewpnem">전화번호</label>
+          <input type="tel" class="form-control" id="newpnem" placeholder="전화번호">
+        </div>
+        <div class="form-group">
+          <label for="Inputnewtel">내선번호</label>
+          <input type="tel" class="form-control" id="newtel" placeholder="내선번호">
+        </div>
+        <div class="form-group">
+          <label for="Inputnewaddress">주소</label>
+          <input type="text" class="form-control" id="newaddress" placeholder="주소">
+        </div>
+        <div class="form-group">
+          <label for="Inputnewpay">연봉</label>
+          <input type="text" class="form-control" id="newpay" placeholder="연봉">
+        </div>
+        <div class="form-group">
+          <label for="Inputnewdate">입사날짜</label>
+          <input type="date" class="form-control" id="newdate" placeholder="입사날짜">
+        </div>
+        <div class="form-group">
+          <label for="Inputnewwantteam">희망부서/팀</label>
+          <input type="text" class="form-control" id="newwantteam" placeholder="희망부서/팀">
+        </div>
+        <div class="btn-area">
+          <button type="submit" class="btn-submit"><a href="list.html">등록하기</a></button>
+          <input type="reset" value="다시작성">
+          <button type="submit" class="btn-backlist"><a href="list.html">목록으로</a></button>
+        </div>
+    </form>
+  </section>
+  <footer>
+    <small>copyright&copy;tjoeun. All rights reserved.</small>
+  </footer>
+</body>
+</html>

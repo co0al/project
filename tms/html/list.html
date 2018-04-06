@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TMS-사원관리시스템</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/tms.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  </head>
+<body>
+  <header>
+    <!--네비게이션  -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="../images/logo.PNG" alt="logo"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="list.html">사원목록 <span class="sr-only">(current)</span></a></li>
+            <li><a href="insert.html">사원등록</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">박보검님 로그인</a></li>
+            <li><a href="index.html">로그아웃</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <!-- 사원 검색 -->
+    <form class="container">
+      <h3>사원 검색</h3>
+      <div class="form-group">
+        <label for="Id">사원번호</label>
+        <input type="text" class="form-control" id="Id" placeholder="사원번호를 입력하세요">
+      </div>
+      <div class="form-group">
+        <label for="Pw">사원이름</label>
+        <input type="text" class="form-control" id="Name" placeholder="사원이름을 입력하세요">
+      </div>
+      <div class="form-group">
+        <label for="DepName">부서이름</label>
+        <input type="text" class="form-control" id="DepName" placeholder="부서이름을 입력하세요">
+      </div>
+      <div class="form-group">
+        <label for="Date">입사날짜</label>
+        <input type="date" class="form-control" id="Date" placeholder="입사날짜를 입력하세요">
+      </div>
+      <button type="login" class="btn btn-default">검색
+        <a href="list.html"></a>
+      </button>
+    </form>
+    <!-- 사원목록 리스트 -->
+    <div class="table container">
+      <h3>사원 목록</h3>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr class="attribute">
+            <th>사원번호</th>
+            <th>사원이름</th>
+            <th>부서이름</th>
+            <th>입사날짜</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1001</td>
+            <td><a href="detail.html">이효리</a></td>
+            <td>개발부</td>
+            <td>2018-04-05</td>
+          </tr>
+          <tr>
+            <td>1002</td>
+            <td><a href="detail.html">이상순</a></td>
+            <td>구매부</td>
+            <td>2018-04-05</td>
+          </tr>
+          <tr>
+            <td>1003</td>
+            <td><a href="detail.html">임윤아</a></td>
+            <td>법무부</td>
+            <td>2018-04-05</td>
+          </tr>
+          <tr>
+            <td>1004</td>
+            <td><a href="detail.html">박보검</a></td>
+            <td>영업부</td>
+            <td>2018-04-05</td>
+          </tr>
+          <tr>
+            <td>1005</td>
+            <td><a href="detail.html">이지은</a></td>
+            <td>비서실</td>
+            <td>2018-04-05</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- 페이지 -->
+    <nav class="text-center">
+      <ul class="pagination">
+        <li>
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+          <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+  <footer>
+    <small>copyright&copy;tjoeun. All rights reserved.</small>
+  </footer>
+</body>
+</html>
